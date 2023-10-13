@@ -76,37 +76,40 @@
       <div class="modal-body">
         <div class="container mt-5">
           <!-- <form [formGroup]="form"> -->
-            <form [formGroup]="form">
+            <form [formGroup]="formValue">
             <div class="row">
               <div class="col-md-6">
                 <div class="mb-3">
-                  <label for="field1" class="form-label">Field 1</label>
-                  <input type="text" class="form-control" id="field1" formControlName="field1">
+                  <label for="name" class="form-label">Name</label>
+                  <input type="text" class="form-control" id="name" formControlName="name">
                 </div>
                 <div class="mb-3">
-                  <label for="field2" class="form-label">Field 2</label>
-                  <input type="text" class="form-control" id="field2" formControlName="field2">
+                  <label for="date" class="form-label">Date</label>
+                  <input type="date" class="form-control" id="date" formControlName="date">
                 </div>
               </div>
               <div class="col-md-6">
                 <div class="mb-3">
-                  <label for="field3" class="form-label">Field 3</label>
-                  <input type="text" class="form-control" id="field3" formControlName="field3">
+                  <label for="OJT" class="form-label">OJT <span class="text-danger">*</span></label>
+                  <select class="form-select" id="ojt" formControlName="ojt">
+                    <option value="Primmed">Primmed</option>
+                    <option value="Tricare">Tricare </option>
+                    <option value="Full stack devolper">Full stack devolper</option>
+                  </select>
                 </div>
                 <div class="mb-3">
-                  <label for="field4" class="form-label">Field 4</label>
-                  <input type="text" class="form-control" id="field4" formControlName="field4">
+                  <label for="time" class="form-label">Time</label>
+                  <input type="time" class="form-control" id="time" formControlName="time">
                 </div>
               </div>
             </div>
-            <button type="submit" class="btn btn-primary">Submit</button>
           </form>
         </div>
         
       </div>
       <div class="modal-footer">
         <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-        <button type="button" class="btn btn-primary">Save</button>
+        <button type="button" class="btn btn-primary" (click)="postEmployeeDetails()">Save</button>
       </div>
     </div>
   </div>

@@ -1,0 +1,47 @@
+{
+  "posts": [
+    {
+      "id": 1,
+      "title": "json-server",
+      "author": "typicode"
+    },
+    {
+      "id": 2,
+      "name": "Kamran Abbasi",
+      "ojt": "option1",
+      "date": "2023-10-04",
+      "time": "19:17"
+    },
+    {
+      "id": 3,
+      "name": "Kamran Abbasi",
+      "ojt": "option2",
+      "date": "2023-10-02",
+      "time": "19:24"
+    },
+    {
+      "id": 4,
+      "name": "akash",
+      "ojt": "Tricare",
+      "date": "2023-10-11",
+      "time": "18:27"
+    },
+    {
+      "id": 5,
+      "name": "Kamran Abbasi",
+      "ojt": "Primmed",
+      "date": "2023-10-04",
+      "time": "20:27"
+    }
+  ],
+  "comments": [
+    {
+      "id": 1,
+      "body": "some comment",
+      "postId": 1
+    }
+  ],
+  "profile": {
+    "name": "typicode"
+  }
+}
